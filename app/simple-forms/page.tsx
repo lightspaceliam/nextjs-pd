@@ -19,6 +19,7 @@ export default function SimpleForms() {
                 tableHeaderChildren={
                   <>
                       <TableCell>Cardholder Name</TableCell>
+                      <TableCell  align="right">Payment</TableCell>
                       <TableCell align='center'>Options</TableCell>
                   </>
                 }
@@ -26,11 +27,14 @@ export default function SimpleForms() {
                   <> 
                       {payments?.map((p: IPayment) => {
                         
-                        const { id, cardHolderName } = p;
+                        const { id, cardHolderName, payment } = p;
 
                           return <TableRow key={id}>
                               <TableCell>
                                   <Typography variant='body2'>{cardHolderName}</Typography>
+                              </TableCell>
+                              <TableCell align="right">
+                                  <Typography variant='body2'>${payment}</Typography>
                               </TableCell>
                               <TableCell align='center'>
                                   <Button

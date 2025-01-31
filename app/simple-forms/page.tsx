@@ -1,28 +1,19 @@
-//'use client';
-
+/**
+ * @description /simple-forms SSR Server Side Rendered Component.
+ */
 import { Typography, Grid2, Paper, TableCell, TableRow, Button } from "@mui/material";
-// import { useRouter } from 'next/navigation';
-import { payments } from "./config";
 import Loader from "../ui/Utilities/Loader";
 import DefaultTable from "../ui/Tables/DefaultTable";
 import IPayment from "../interfaces/IPaymentModels";
 import { getAsync } from "../helpers/ApiService";
-// import IResponseMessage from '../interfaces/IResponseMessage';
-// import { emptyResponseMessage } from '../common/constants';
-// working out routing with params https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating
 export default async function SimpleForms() {
-  // const response = await getAsync<Array<IPayment>>(`${process.env.BASE_API}payments`);
-  // const [responseMessage, setResponseMessage] = useState<IResponseMessage>(emptyResponseMessage);
+  const response = await getAsync<Array<IPayment>>(`${process.env.BASE_API}payments`);
 
-
-  // useEffect(() => {}, []);
-  // if(response instanceof Error){
-  //   //setResponseMessage({ severity: 'error', message: response?.message })
-  //   console.error(`Error: ${response.message}`);
-  // }
-  //const router = useRouter();
-  //const { query: { id }} = router;
-  // console.log(router);
+  if(response instanceof Error){
+    console.error(`Error: ${response.message}`);
+    return <div>Error: {response.message}</div>
+  }
+  
   return (
     <Paper sx={{ padding: '5px 20px', marginBottom: '15px'}}>
       <Grid2 container spacing={2}>
@@ -43,7 +34,7 @@ export default async function SimpleForms() {
               }
               tableBodyChildren={
                 <> 
-                    {payments?.map((p: IPayment) => {
+                    {response?.map((p: IPayment) => {
                       
                       const { id, cardHolderName, amount } = p;
 

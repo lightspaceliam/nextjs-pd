@@ -34,12 +34,12 @@ Requirements:
 
 - [.NET 8](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
 - SQL Server
-  - MacOS [There are many but try this](https://medium.com/@ugurelsevket/setting-up-sql-server-with-docker-on-macos-a-step-by-step-guide-8742c725a63e) I also found you needed to modify Docker for apple silicon - Settings / Virtual Machine Options:
+  - macOS [Install SQL Server on Docker. There are many but try this](https://medium.com/@ugurelsevket/setting-up-sql-server-with-docker-on-macos-a-step-by-step-guide-8742c725a63e) I also found you needed to modify Docker for apple silicon - Settings / Virtual Machine Options:
     - Check Apple Virtualization framework
     - Use Rosetta for x86_64/amd64 emulation on Apple Silicon
-  - Windows [Developer](https://www.microsoft.com/en-au/sql-server/sql-server-downloads)
+  - Windows [Developer is all that's required](https://www.microsoft.com/en-au/sql-server/sql-server-downloads)
 
-If on Windows the connection string is assuming you can connect to your local SQL Server as (local). Up to you to configure how it works best for you.
+Up to you to configure the connection string to how it works best for you.
 
 In your editor of choice (Visual Studio | Rider | ...):
 
@@ -64,14 +64,14 @@ The Api is configured to run schema migrations to create the database, add singl
 NextJS has been available since 2016. I 1st heard about it in 2020. Since I have a little downtime, I thought I should do some personal development. This simple POC includes:
 
 1. Routing 
-  - List /payments/
-  - Details /payments/{id}
+    - List /payments/
+    - Details /payments/{id}
 2. Server Side Rendering (SSR)
 3. Api data requests form a database - all running locally
 
 ## Outcomes
 
-The initial tutorial: [Dashboard App](https://nextjs.org/learn/dashboard-app) was really insightful however routing seemed to be a little challenging to find: [Creating a Nested Route](https://nextjs.org/docs/app/getting-started/layouts-and-pages#creating-a-nested-route) & [Dynamic Routes](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes).
+The initial tutorial: [Dashboard App](https://nextjs.org/learn/dashboard-app) was really insightful however routing seemed to be a little challenging to find: [Creating a Nested Route](https://nextjs.org/docs/app/getting-started/layouts-and-pages#creating-a-nested-route) & [Dynamic Routes](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes) due to the fact I'm still learning NextJS and there are some strong conventions.
 
 Regardless, it's super fast (locally) and if you have reasonable experience with React, it's very straight forward. 
 

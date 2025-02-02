@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 15, "column": 0}, "map": {"version":3,"sources":["file:///Users/liamhandasyde/Desktop/Code/POCS/nextjs-poc/clients/app/styles/theme.ts"],"sourcesContent":["'use client';\n\nimport { createTheme } from '@mui/material/styles';\n\nconst theme = createTheme({\n  typography: {\n    fontFamily: 'var(--font-roboto)',\n  },\n});\n\nexport default theme;"],"names":[],"mappings":";;;AAEA;AAFA;;AAIA,MAAM,QAAQ,CAAA,GAAA,oNAAA,CAAA,cAAW,AAAD,EAAE;IACxB,YAAY;QACV,YAAY;IACd;AACF;uCAEe"}},
+    {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 33, "column": 0}, "map": {"version":3,"sources":["file:///Users/liamhandasyde/Desktop/Code/POCS/nextjs-poc/clients/app/styles/layout.ts"],"sourcesContent":["'use client';\n\nimport { styled } from '@mui/material/styles';\nimport Box from '@mui/material/Box';\n\nexport const StyledBox = styled(Box)({\n   '&.MuiBox-root': {\n      marginTop: '14px',\n      paddingLeft: '24px',\n      paddingRight: '24px',\n      \n    }, \n});"],"names":[],"mappings":";;;AAEA;AACA;AAHA;;;AAKO,MAAM,YAAY,CAAA,GAAA,0MAAA,CAAA,SAAM,AAAD,EAAE,+IAAA,CAAA,UAAG,EAAE;IAClC,iBAAiB;QACd,WAAW;QACX,aAAa;QACb,cAAc;IAEhB;AACJ"}},
+    {"offset": {"line": 48, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

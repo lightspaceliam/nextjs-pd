@@ -69,7 +69,7 @@ NextJS has been available since 2016. I 1st heard about it in 2020. Since I have
 2. Server Side Rendering (SSR)
 3. Api data requests form a database - all running locally
 
-## Outcomes
+## Final Thoughts
 
 The initial tutorial: [Dashboard App](https://nextjs.org/learn/dashboard-app) was really insightful however routing seemed to be a little challenging to find: [Creating a Nested Route](https://nextjs.org/docs/app/getting-started/layouts-and-pages#creating-a-nested-route) & [Dynamic Routes](https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes) due to the fact I'm still learning NextJS and there are some strong conventions.
 
